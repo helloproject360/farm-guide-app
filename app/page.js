@@ -20,6 +20,14 @@ export default function Home() {
           <li>{t.feature3}</li>
         </ul>
         <p className="muted">{t.comingSoon}</p>
+        <a href="/farm"
+          style={{
+            display: "inline-block", marginTop: 18, padding: "12px 20px",
+            background: "#2e7d32", color: "#fff", borderRadius: 8,
+            textDecoration: "none", fontWeight: 600,
+          }}>
+          Set up my farm →
+        </a>
       </section>
 
       <footer className="footer">{t.footer}</footer>
