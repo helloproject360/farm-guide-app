@@ -1,0 +1,21 @@
+{
+  "name": "farm-guide-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Farm Guide App — a guide that turns complete beginners into earning farmers. Palawan first.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.5"
+  }
+}
