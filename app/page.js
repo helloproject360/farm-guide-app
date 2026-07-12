@@ -20,14 +20,24 @@ export default function Home() {
           <li>{t.feature3}</li>
         </ul>
         <p className="muted">{t.comingSoon}</p>
-        <a href="/farm"
-          style={{
-            display: "inline-block", marginTop: 18, padding: "12px 20px",
-            background: "#2e7d32", color: "#fff", borderRadius: 8,
-            textDecoration: "none", fontWeight: 600,
-          }}>
-          Set up my farm →
-        </a>
+        <div style={{ marginTop: 18, display: "flex", flexWrap: "wrap", gap: 10 }}>
+          <a href="/farm"
+            style={{
+              display: "inline-block", padding: "12px 20px",
+              background: "#2e7d32", color: "#fff", borderRadius: 8,
+              textDecoration: "none", fontWeight: 600,
+            }}>
+            Set up my farm →
+          </a>
+          <a href="/recommend"
+            style={{
+              display: "inline-block", padding: "12px 20px",
+              background: "#fff", color: "#2e7d32", border: "2px solid #2e7d32",
+              borderRadius: 8, textDecoration: "none", fontWeight: 600,
+            }}>
+            See what to plant →
+          </a>
+        </div>
       </section>
 
       <footer className="footer">{t.footer}</footer>
