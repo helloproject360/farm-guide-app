@@ -105,6 +105,9 @@ export default function Calendar() {
               ))}
             </div>
           )}
+          <p className="muted" style={{ marginTop: 16, fontSize: "0.8rem" }}>
+            Prices are rough guides and change with the season and your location.
+          </p>
         </section>
       )}
 
