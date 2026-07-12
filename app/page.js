@@ -29,6 +29,7 @@ export default function Home() {
         <div style={{ marginTop: 18, display: "flex", flexWrap: "wrap", gap: 10 }}>
           <a href="/farm" style={{ ...btn, background: "#2e7d32", color: "#fff" }}>Set up my farm →</a>
           <a href="/recommend" style={outline}>See what to plant →</a>
+          <a href="/calendar" style={outline}>Planting calendar →</a>
           <a href="/guides" style={outline}>Read the guides →</a>
         </div>
       </section>
