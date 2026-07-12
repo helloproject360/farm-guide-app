@@ -92,18 +92,18 @@ export default function Calendar() {
           {toPlant.length === 0 ? (
             <p>No crops matched for this month. Try another month.</p>
           ) : (
-            <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 12 }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
               {toPlant.map((c) => (
-                <li key={c.id} style={{ paddingLeft: 0 }}>
+                <div key={c.id}>
                   <strong>{c.name}</strong>
                   {c.name_tl ? <span style={{ color: "#667a6e" }}> · {c.name_tl}</span> : null}
                   <div className="muted" style={{ fontSize: "0.9rem" }}>
                     {c.months_to_harvest ? "Harvest in ~" + c.months_to_harvest + " months" : ""}
                     {c.farmgate_price_php ? " · ~₱" + c.farmgate_price_php + "/kg" : ""}
                   </div>
-                </li>
+                </div>
               ))}
-            </ul>
+            </div>
           )}
         </section>
       )}
