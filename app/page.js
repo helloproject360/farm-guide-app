@@ -3,6 +3,12 @@ import { strings, defaultLang } from "./strings";
 export default function Home() {
   const t = strings[defaultLang];
 
+  const btn = {
+    display: "inline-block", padding: "12px 20px", borderRadius: 8,
+    textDecoration: "none", fontWeight: 600,
+  };
+  const outline = { ...btn, background: "#fff", color: "#2e7d32", border: "2px solid #2e7d32" };
+
   return (
     <main className="page">
       <section className="hero">
@@ -21,22 +27,9 @@ export default function Home() {
         </ul>
         <p className="muted">{t.comingSoon}</p>
         <div style={{ marginTop: 18, display: "flex", flexWrap: "wrap", gap: 10 }}>
-          <a href="/farm"
-            style={{
-              display: "inline-block", padding: "12px 20px",
-              background: "#2e7d32", color: "#fff", borderRadius: 8,
-              textDecoration: "none", fontWeight: 600,
-            }}>
-            Set up my farm →
-          </a>
-          <a href="/recommend"
-            style={{
-              display: "inline-block", padding: "12px 20px",
-              background: "#fff", color: "#2e7d32", border: "2px solid #2e7d32",
-              borderRadius: 8, textDecoration: "none", fontWeight: 600,
-            }}>
-            See what to plant →
-          </a>
+          <a href="/farm" style={{ ...btn, background: "#2e7d32", color: "#fff" }}>Set up my farm →</a>
+          <a href="/recommend" style={outline}>See what to plant →</a>
+          <a href="/guides" style={outline}>Read the guides →</a>
         </div>
       </section>
 
